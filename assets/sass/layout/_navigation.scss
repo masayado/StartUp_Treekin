@@ -1,0 +1,35 @@
+.navbar{
+    margin: 0 auto;
+    height: 50px;
+    background-color:$white;
+    overflow: auto;
+    padding: 20px;
+    display:flex;
+
+&__logo{
+    justify-content: center;
+    padding-right:10px;
+    }
+
+&__links {
+    justify-content: center;
+    padding: 10px;
+    }
+
+&__links a{
+    padding:10px;
+    }
+
+&__buttons{
+    margin-left: auto;
+    }
+
+&__buttons button{
+    padding:10px;
+    width: 100px;
+}
+
+}  
+
+
+

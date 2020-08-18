@@ -4,4 +4,36 @@
   box-sizing: content-box;
 }
 
+.container__col-12 {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navbar {
+  margin: 0 auto;
+  height: 50px;
+  background-color: #FFFFFF;
+  overflow: auto;
+  padding: 20px;
+  display: flex;
+}
+.navbar__logo {
+  justify-content: center;
+  padding-right: 10px;
+}
+.navbar__links {
+  justify-content: center;
+  padding: 10px;
+}
+.navbar__links a {
+  padding: 10px;
+}
+.navbar__buttons {
+  margin-left: auto;
+}
+.navbar__buttons button {
+  padding: 10px;
+  width: 100px;
+}
+
 /*# sourceMappingURL=style.css.map */
