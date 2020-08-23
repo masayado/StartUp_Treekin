@@ -8,6 +8,40 @@ body {
   background-color: whitesmoke;
 }
 
+.footer-menu {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #221D23;
+}
+.footer-menu__links {
+  list-style: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+.footer-menu__links__item {
+  color: #E8E8E8;
+  padding: 0px 10px;
+  margin-right: 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.footer-menu__links__item:hover {
+  color: #EE9480;
+}
+.footer-menu__text {
+  color: #E8E8E8;
+  padding: 0px 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 400;
+  font-weight: 500;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -15,39 +49,56 @@ body {
 
 .nav {
   width: 100%;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 15px;
+  padding: 15px 30px;
   background-color: #FFFFFF;
-  position: fixed;
-}
-.nav__logo {
-  cursor: pointer;
 }
 
 .nav-menu {
   margin-left: 0;
+  display: flex;
+  align-items: center;
+}
+.nav-menu__logo {
+  float: left;
+  cursor: pointer;
+  padding-right: 10px;
 }
 .nav-menu__links {
+  float: right;
   list-style: none;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
 }
 .nav-menu__links__item {
+  color: #333745;
   padding: 0px 10px;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
+  font-weight: 500;
   text-decoration: none;
+}
+.nav-menu__links__item:hover {
+  color: #EE9480;
 }
 .nav-menu__buttons a {
+  color: #333745;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
+  font-weight: 600;
   text-decoration: none;
 }
+.nav-menu__buttons a:hover {
+  color: #77D1DD;
+}
 .nav-menu__buttons button {
+  color: #FFFFFF;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
+  font-weight: 700;
   padding: 9px 15px;
   background-color: #2AB7CA;
   border: none;
@@ -56,6 +107,9 @@ body {
 }
 .nav-menu__buttons button:hover {
   background-color: #77D1DD;
+}
+.nav-menu__buttons button:focus {
+  background-color: #C7C8CC;
 }
 
 /*# sourceMappingURL=style.css.map */

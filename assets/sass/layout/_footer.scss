@@ -1,0 +1,39 @@
+.footer-menu{
+    width:100%;
+    height:100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px 30px;
+    background-color:$raising-black;
+
+&__links{
+    list-style: none;
+    font-family: $raleway;
+    font-size: $medium;
+}
+
+
+&__links__item{
+    color: $platinum;
+    padding: 0px 10px;  
+    margin-right:10px;
+    font-family: $raleway;
+    font-size: $medium;
+    font-weight: $regular;
+    text-decoration: none;
+    }
+
+&__links__item:hover{
+    color: $dark-salmon;
+    }
+
+&__text{
+    color: $platinum;
+    padding: 0px 10px;  
+    font-family: $raleway;
+    font-size: $regular;
+    font-weight: $mediumbold;
+    }
+
+}
