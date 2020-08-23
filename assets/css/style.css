@@ -38,10 +38,12 @@ body {
   padding: 0px 10px;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
+  text-decoration: none;
 }
 .nav-menu__buttons a {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
+  text-decoration: none;
 }
 .nav-menu__buttons button {
   font-family: "Raleway", sans-serif;
