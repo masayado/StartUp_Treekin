@@ -1,10 +1,10 @@
 .nav{
     width:100%;
-    height:80px;
+    height:5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:15px 3em;
+    padding:0.9375rem 3em;
     background-color:$white;
     position: fixed;
 }
@@ -17,7 +17,7 @@
 &__logo{
     float:left;
     cursor: pointer;
-    padding-right: 10px;
+    padding-right: 0.625rem;
     }     
 
 &__links{
@@ -25,18 +25,18 @@
     list-style: none;
     font-family: $raleway;
     font-size: $medium;
-    letter-spacing: 0.5px;
-    @media (max-width: 480px) {
+    letter-spacing: 0.0313rem;
+    @media (max-width: 768px) {
         display:none;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
         display:none;
     }
 } 
 
 &__links__item{
     color: $onyx;
-    padding: 0px 10px;  
+    padding: 0rem 0.625rem;  
     font-family: $raleway;
     font-size: $medium;
     font-weight: $mediumbold;
@@ -52,7 +52,7 @@
     font-family: $raleway;
     font-size: $medium;
     font-weight: $semibold;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.0313rem;
     text-decoration: none;
     }   
 
@@ -65,12 +65,12 @@
     font-family: $raleway;
     font-size: $medium;
     font-weight: $bold;
-    letter-spacing: 0.5px;
-    padding: 9px 15px;
+    letter-spacing: 0.0313rem;
+    padding: 0.5625rem 0.9375rem;
     background-color:$ball-blue;
     border:none;
     cursor: pointer;
-    margin-left: 15px;
+    margin-left: 0.9375rem;
     }
 
 &__buttons button:hover{

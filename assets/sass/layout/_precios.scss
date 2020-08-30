@@ -1,11 +1,15 @@
 .precios{
     background: url('../img/bg-price.svg');
     min-height: 135vh;
-    width: 100%;
+    max-width: 100%;
     background-size: cover;
-    background-position: top;
     background-repeat: no-repeat; 
-    padding:15px 3em;  
+    padding:30px 3em;  
+    @media (max-width: 768px) {
+    background-size: cover;
+    background-position: center center;
+    
+    }
 }
 
 .precios-contenido{
@@ -18,8 +22,8 @@
     color:$white;
     text-align: center;
     align-self: center;
-    margin-top:200px;
-    margin-bottom:35px;
+    margin-top:12.5rem;
+    margin-bottom:2.1875rem;
     }
 
 &__cards{
@@ -28,5 +32,12 @@
     align-items: center;
     flex-direction: row;
     align-content: center;
+    @media (max-width: 768px) {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+        }
     }
 }
+

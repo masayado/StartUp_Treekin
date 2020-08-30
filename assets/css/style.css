@@ -121,11 +121,11 @@ li:before {
 
 .footer-menu {
   width: 100%;
-  height: 100px;
+  height: 6.25rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 3em;
+  padding: 0.9375rem 3em;
   background-color: #221D23;
 }
 .footer-menu__links {
@@ -133,37 +133,46 @@ li:before {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .footer-menu__links {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
 }
 .footer-menu__links__item {
   color: #BABABA;
-  padding: 0px 10px;
-  margin-right: 10px;
+  padding: 0rem 0.625rem;
+  margin-right: 0.625rem;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 400;
   text-decoration: none;
+}
+@media (max-width: 768px) {
+  .footer-menu__links__item {
+    font-size: 14px;
+  }
 }
 .footer-menu__links__item:hover {
   color: #EE9480;
 }
 .footer-menu__text {
   color: #BABABA;
-  padding: 0px 10px;
+  padding: 0rem 0.625rem;
   font-family: "Raleway", sans-serif;
   font-size: 400;
   font-weight: 500;
 }
+@media (max-width: 768px) {
+  .footer-menu__text {
+    font-size: 14px;
+  }
+}
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .footer-menu {
-    height: 150px;
+    height: 9.375rem;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px 3em;
   }
 }
 .container {
@@ -198,13 +207,20 @@ li:before {
   grid-row: 5/6;
 }
 
+@media only screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: ".nav" ".hero" ".main" ".precios" ".footer";
+  }
+}
 .nav {
   width: 100%;
-  height: 80px;
+  height: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 3em;
+  padding: 0.9375rem 3em;
   background-color: #FFFFFF;
   position: fixed;
 }
@@ -217,28 +233,28 @@ li:before {
 .nav-menu__logo {
   float: left;
   cursor: pointer;
-  padding-right: 10px;
+  padding-right: 0.625rem;
 }
 .nav-menu__links {
   float: right;
   list-style: none;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.0313rem;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .nav-menu__links {
     display: none;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .nav-menu__links {
     display: none;
   }
 }
 .nav-menu__links__item {
   color: #333745;
-  padding: 0px 10px;
+  padding: 0rem 0.625rem;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -252,7 +268,7 @@ li:before {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 600;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.0313rem;
   text-decoration: none;
 }
 .nav-menu__buttons a:hover {
@@ -263,12 +279,12 @@ li:before {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  letter-spacing: 0.5px;
-  padding: 9px 15px;
+  letter-spacing: 0.0313rem;
+  padding: 0.5625rem 0.9375rem;
   background-color: #2AB7CA;
   border: none;
   cursor: pointer;
-  margin-left: 15px;
+  margin-left: 0.9375rem;
 }
 .nav-menu__buttons button:hover {
   background-color: #77D1DD;
@@ -279,17 +295,31 @@ li:before {
 
 .hero {
   background: url("../img/bg-hero.svg");
-  margin-top: 100px;
+  margin-top: 6.25rem;
   height: 130vh;
-  width: 100%;
+  max-width: 100%;
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
+}
+@media (max-width: 768px) {
+  .hero {
+    height: 110vh;
+    background-size: contain;
+    background-position: center bottom;
+    margin-bottom: 25px;
+  }
 }
 
 .hero__info {
   width: 40%;
   padding: 3em;
+}
+@media (max-width: 768px) {
+  .hero__info {
+    width: 100%;
+    padding: 3em;
+  }
 }
 .hero__info-titulo {
   font-family: "Raleway", sans-serif;
@@ -300,16 +330,10 @@ li:before {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   color: #221D23;
-  line-height: 28px;
-  margin-top: 20px;
+  line-height: 1.75rem;
+  margin-top: 1.25rem;
 }
 
-@media (max-width: 480px) {
-  .hero__info {
-    width: 100%;
-    padding: 3em;
-  }
-}
 .main {
   min-height: 50vh;
   width: 100%;
@@ -326,7 +350,7 @@ li:before {
   color: #221D23;
   text-align: center;
   align-self: center;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 .main-contenido__info {
   display: flex;
@@ -334,44 +358,68 @@ li:before {
   align-items: center;
   flex-direction: row;
   align-content: center;
-  padding-top: 30px;
+  padding-top: 1.875rem;
+}
+@media (max-width: 768px) {
+  .main-contenido__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 .main-contenido__info__grafico {
   float: left;
 }
 .main-contenido__info__grafico--img {
-  width: 350px;
-  padding: 25px;
-  margin: 25px;
+  width: 25rem;
+  padding: 1.5625rem;
+  margin: 1.5625rem;
   float: left;
-  animation: blur 5s ease-in;
+  animation: blur 4s ease-in;
 }
 .main-contenido__info__textos {
-  width: 500px;
-  padding: 25px;
+  width: 31.25rem;
+  padding: 1.5625rem;
   overflow: hidden;
+}
+@media (max-width: 768px) {
+  .main-contenido__info__textos {
+    width: 25rem;
+    padding: 1.5625rem;
+  }
 }
 .main-contenido__info__textos--sub {
   font-family: "Raleway", sans-serif;
   font-size: 30px;
   color: #221D23;
 }
+@media (max-width: 768px) {
+  .main-contenido__info__textos--sub {
+    font-size: 25px;
+  }
+}
 .main-contenido__info__textos--p {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   color: #221D23;
-  line-height: 28px;
-  margin-top: 20px;
+  line-height: 1.75rem;
+  margin-top: 1.25rem;
 }
 
 .precios {
   background: url("../img/bg-price.svg");
   min-height: 135vh;
-  width: 100%;
+  max-width: 100%;
   background-size: cover;
-  background-position: top;
   background-repeat: no-repeat;
-  padding: 15px 3em;
+  padding: 30px 3em;
+}
+@media (max-width: 768px) {
+  .precios {
+    background-size: cover;
+    background-position: center center;
+  }
 }
 
 .precios-contenido {
@@ -384,8 +432,8 @@ li:before {
   color: #FFFFFF;
   text-align: center;
   align-self: center;
-  margin-top: 200px;
-  margin-bottom: 35px;
+  margin-top: 12.5rem;
+  margin-bottom: 2.1875rem;
 }
 .precios-contenido__cards {
   display: flex;
@@ -393,6 +441,14 @@ li:before {
   align-items: center;
   flex-direction: row;
   align-content: center;
+}
+@media (max-width: 768px) {
+  .precios-contenido__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
