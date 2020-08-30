@@ -1,0 +1,33 @@
+.hero{
+    background: url('../img/bg-hero.svg');
+    margin-top: 100px;
+    height: 130vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top ;
+    background-repeat: no-repeat;    
+    }
+
+.hero__info{
+    width: 40%;
+    padding:3em;
+
+&-titulo{
+    font-family: $raleway;
+    font-size:$xxxxx-large;
+    }
+
+&-parrafo{
+    font-family: $open-sans;
+    font-size: $medium;
+    line-height: 28px;
+    margin-top:20px;
+    }    
+}
+
+@media (max-width: 480px) {
+    .hero__info{
+    width: 100%;
+    padding:3em;
+    }
+}

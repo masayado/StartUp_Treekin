@@ -14,11 +14,11 @@
    
 <nav class="nav"> 
     <div class="nav-menu">
-        <img class="nav-menu__logo" src="./assets/images/Logo.svg" alt="Treekin Logo">
+        <img class="nav-menu__logo" src="./assets/img/Logo.svg" alt="Treekin Logo">
         <ul class="nav-menu__links">
-        <a class="nav-menu__links__item" href="#">Acerca de</a>
-        <a class="nav-menu__links__item" href="#">Características</a>
-        <a class="nav-menu__links__item" href="#">Precios</a>
+        <a class="nav-menu__links__item" href="#acerca-de">Acerca de</a>
+        <a class="nav-menu__links__item" href="#caracteristicas">Características</a>
+        <a class="nav-menu__links__item" href="#precios">Precios</a>
         </ul>
     </div>
 
@@ -29,27 +29,72 @@
     
 </nav>
 
-<section class="hero">
-
-<div class="hero__info">
+<section class="hero" id="acerca-de">
+    <div class="hero__info">
 
     <h1 class="hero__info-titulo">Haz Trekking sin parar</h1>
     <p class="hero__info-parrafo">Con Trekk-in te despreocuparás de la estimación de tu viaje, ya que con unos simples pasos podrás definir la mejor ruta a tomar con tus compañeros de expedición. </p>
 
-</div>  
+    </div>  
 </section>
 
-<main class="caracteristicas">
-
-    <h1>Características</h1>
-    <h2>Estadísticas de tu progreso</h2>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, quidem ullam non earum illo expedita quaerat modi nesciunt, asperiores excepturi officia obcaecati ea ut incidunt facilis alias labore sequi maiores.</p>
-
+<main class="main" id="caracteristicas">
+    <h2 class="main__title">Características</h2>
+    <div class="main__contenido">
+        <div class="main__grafico">
+            <img src="./assets/img/bar-graph.svg" alt="Gráfico de barras">
+        </div>
+        <div class="main__textos">
+    <h3 class="main__sub">Estadísticas de tu progreso</h3>
+    <p class="main__p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, quidem ullam non earum illo expedita quaerat modi nesciunt, asperiores excepturi officia obcaecati ea ut incidunt facilis alias labore sequi maiores.</p>
+        </div>
+    </div>
 </main>
 
-<section class="precios">
-    Cards
-</section>
+<main class="precios" id="precios">
+    <div class="precios-contenido">
+        <h2 class="precios-contenido__titulo">Precios</h2>
+        
+        <div class="precios-contenido__cards">
+
+            <div class="precios-contenido__cards--1">
+                <div class="cards__info">
+                <h4 class="cards__info--titulo">Trekk-in Free</h4>
+                <h5 class="cards__info--precio">$ 0 / mes</h5>
+                <hr class="cards__info--hr">
+                <ul class="cards__info--list">
+                    <li>Ver mapas creado por usuarios</li>
+                    <li>Conectar con otros usuarios</li>
+                    <br>
+                    <br>
+                    <br>
+                </ul>
+                <hr class="cards__info--hr">
+                <button class="cards__button">Obtén Free</button>
+                </div>
+            </div>
+
+            <div class="precios-contenido__cards--2">
+                <div class="cards__info">
+                <h4 class="cards__info--titulo">Trekk-in Premium</h4>
+                <h5 class="cards__info--precio">$ 3500 / mes</h5>
+                <hr class="cards__info--hr">
+                <ul class="cards__info--list">
+                    <li>Ver mapas creado por usuarios</li>
+                    <li>Conectar con otros usuarios</li>
+                    <li>Definir mejores rutas</li>
+                    <li>Mapas Offline</li>
+                    <li>Integración con otras aplicaciones</li>
+                </ul>
+                <hr class="cards__info--hr">
+                <button class="cards__button">Obtén Premium</button>
+                </div>
+            </div>
+
+        </div>
+        
+   </div>
+</main>
 
 <footer class="footer">
     <div class="footer-menu">
@@ -62,8 +107,6 @@
             <p>&copy; 2018 Trekk-in SPA.</p>
     </div>
 </footer>
-
-
 
 </div>
 

@@ -1,0 +1,35 @@
+.cards__button{
+    width:100%;
+    color:$white;
+    font-family: $raleway;
+    font-size: $small;
+    font-weight: $semibold;
+    letter-spacing: 1px;
+    padding: 11px 15px;
+    background-color:$ball-blue;
+    border:none;
+    cursor: pointer;
+    margin-top:8px;
+    }
+
+.cards__button:hover{
+    background-color:$middle-blue;
+    }
+
+.cards__button:active{
+    background-color:$lavender-gray;
+    }
+   
+.cards__button a{
+    color: $onyx;
+    font-family: $raleway;
+    font-size: $medium;
+    font-weight: $semibold;
+    text-decoration: none;
+    } 
+
+.cards__button a:hover{
+    color: $middle-blue;
+    } 
+
+

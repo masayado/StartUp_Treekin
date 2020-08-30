@@ -4,18 +4,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:15px 30px;
+    padding:15px 3em;
     background-color:$raising-black;
 
 &__links{
     list-style: none;
     font-family: $raleway;
     font-size: $medium;
-}
+    @media (max-width: 480px) {
+        margin-bottom:20px;
+    }
+    }
 
 
 &__links__item{
-    color: $platinum;
+    color: $gray;
     padding: 0px 10px;  
     margin-right:10px;
     font-family: $raleway;
@@ -29,11 +32,20 @@
     }
 
 &__text{
-    color: $platinum;
+    color: $gray;
     padding: 0px 10px;  
     font-family: $raleway;
     font-size: $regular;
     font-weight: $mediumbold;
     }
 
+}
+
+@media (max-width: 480px) {
+    .footer-menu{
+    height:150px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:20px 3em;
+    }   
 }

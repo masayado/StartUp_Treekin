@@ -1,0 +1,55 @@
+.main{
+    min-height: 50vh;
+    width: 100%; 
+    padding:0px 3em;
+
+&__contenido{
+    width:70%;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:80px;
+}   
+
+&__grafico{
+    padding:15px;
+    float: left;
+}
+
+&__grafico img{
+    animation: difuminar 1s ease-in;
+    margin-right:25px;
+}
+
+
+&____textos{
+    position:absolute;
+    float: right;
+    @media (max-width: 480px) {
+        clear: both;
+    }
+}
+
+&__title{
+    font-family: $raleway;
+    font-size:$xx-large;
+    font-weight:$bold;
+    text-align: center;
+    align-self: center;
+    margin-left: 25px;
+    }   
+    
+&__sub{
+    font-family:$raleway;
+    font-size: $x-large;
+    }
+
+&__p{
+    font-family: $open-sans;
+    font-size: $medium;
+    line-height: 28px;
+    margin-top:20px;
+    }
+}
+
