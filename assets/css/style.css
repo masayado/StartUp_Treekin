@@ -9,6 +9,17 @@ body {
   background-color: #FFFFFF;
 }
 
+@keyframes blur {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .precios-contenido__cards--1 {
   background-color: #FFFFFF;
   width: 300px;
@@ -325,28 +336,27 @@ li:before {
   align-content: center;
   padding-top: 30px;
 }
-.main-contenido__info--grafico {
+.main-contenido__info__grafico {
   float: left;
 }
-.main-contenido__info--grafico img {
+.main-contenido__info__grafico--img {
   width: 350px;
   padding: 25px;
   margin: 25px;
   float: left;
+  animation: blur 5s ease-in;
 }
-.main-contenido__info--textos {
+.main-contenido__info__textos {
   width: 500px;
   padding: 25px;
   overflow: hidden;
 }
-
-.main__sub {
+.main-contenido__info__textos--sub {
   font-family: "Raleway", sans-serif;
   font-size: 30px;
   color: #221D23;
 }
-
-.main__p {
+.main-contenido__info__textos--p {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   color: #221D23;

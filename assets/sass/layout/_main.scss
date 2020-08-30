@@ -26,35 +26,35 @@
     padding-top:30px;
     }
 
-&__info--grafico{
+&__info__grafico{
     float:left;
     }
 
-&__info--grafico img{
+&__info__grafico--img{
     width:350px;
     padding: 25px;
     margin:25px;
     float:left;
+    animation: blur 5s ease-in;
     }
 
-&__info--textos{
+&__info__textos{
     width:500px;
     padding: 25px;
     overflow: hidden;
     }
 
-}
-
-.main__sub{
+&__info__textos--sub{
     font-family:$raleway;
     font-size: $x-large;
     color:$raising-black;
-    }   
+    }
 
-.main__p{
+&__info__textos--p{
     font-family: $open-sans;
     font-size: $medium;
     color:$raising-black;
     line-height: 28px;
     margin-top:20px;
+    }
 }
