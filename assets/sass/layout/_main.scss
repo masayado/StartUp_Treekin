@@ -1,55 +1,60 @@
 .main{
     min-height: 50vh;
     width: 100%; 
-    padding:0px 3em;
-
-&__contenido{
-    width:70%;
-    margin:auto;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    margin-top:80px;
-}   
-
-&__grafico{
-    padding:15px;
-    float: left;
-}
-
-&__grafico img{
-    animation: difuminar 1s ease-in;
-    margin-right:25px;
-}
-
-
-&____textos{
-    position:absolute;
-    float: right;
-    @media (max-width: 480px) {
-        clear: both;
+    padding:15px 3em;
     }
-}
+    
+.main-contenido{
+    width:100%;
 
-&__title{
+&__titulo{
     font-family: $raleway;
     font-size:$xx-large;
     font-weight:$bold;
+    color:$raising-black;
     text-align: center;
     align-self: center;
-    margin-left: 25px;
-    }   
-    
-&__sub{
-    font-family:$raleway;
-    font-size: $x-large;
+    margin-bottom:10px;
     }
 
-&__p{
-    font-family: $open-sans;
-    font-size: $medium;
-    line-height: 28px;
-    margin-top:20px;
+&__info{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    padding-top:30px;
     }
+
+&__info--grafico{
+    float:left;
+    }
+
+&__info--grafico img{
+    width:350px;
+    padding: 25px;
+    margin:25px;
+    float:left;
+    }
+
+&__info--textos{
+    width:500px;
+    padding: 25px;
+    overflow: hidden;
+    }
+
 }
 
+.main__sub{
+    font-family:$raleway;
+    font-size: $x-large;
+    color:$raising-black;
+    }   
+
+.main__p{
+    font-family: $open-sans;
+    font-size: $medium;
+    color:$raising-black;
+    line-height: 28px;
+    margin-top:20px;
+}

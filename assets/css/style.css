@@ -283,10 +283,12 @@ li:before {
 .hero__info-titulo {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
+  color: #221D23;
 }
 .hero__info-parrafo {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
+  color: #221D23;
   line-height: 28px;
   margin-top: 20px;
 }
@@ -300,55 +302,60 @@ li:before {
 .main {
   min-height: 50vh;
   width: 100%;
-  padding: 0px 3em;
+  padding: 15px 3em;
 }
-.main__contenido {
-  width: 70%;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 80px;
+
+.main-contenido {
+  width: 100%;
 }
-.main__grafico {
-  padding: 15px;
-  float: left;
-}
-.main__grafico img {
-  animation: difuminar 1s ease-in;
-  margin-right: 25px;
-}
-.main____textos {
-  position: absolute;
-  float: right;
-}
-@media (max-width: 480px) {
-  .main____textos {
-    clear: both;
-  }
-}
-.main__title {
+.main-contenido__titulo {
   font-family: "Raleway", sans-serif;
   font-size: 35px;
   font-weight: 700;
+  color: #221D23;
   text-align: center;
   align-self: center;
-  margin-left: 25px;
+  margin-bottom: 10px;
 }
+.main-contenido__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  align-content: center;
+  padding-top: 30px;
+}
+.main-contenido__info--grafico {
+  float: left;
+}
+.main-contenido__info--grafico img {
+  width: 350px;
+  padding: 25px;
+  margin: 25px;
+  float: left;
+}
+.main-contenido__info--textos {
+  width: 500px;
+  padding: 25px;
+  overflow: hidden;
+}
+
 .main__sub {
   font-family: "Raleway", sans-serif;
   font-size: 30px;
+  color: #221D23;
 }
+
 .main__p {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
+  color: #221D23;
   line-height: 28px;
   margin-top: 20px;
 }
 
 .precios {
   background: url("../img/bg-price.svg");
-  margin-top: 100px;
   min-height: 135vh;
   width: 100%;
   background-size: cover;
