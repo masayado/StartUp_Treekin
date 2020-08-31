@@ -27,10 +27,10 @@
     }
     }     
 
-&__links{
+&__links a{
     display:flex;
     float: right;
-    list-style: none;
+    l ist-style: none;
     font-family: $raleway;
     font-size: $medium;
     letter-spacing: 0.0313rem;
@@ -41,7 +41,7 @@
     }
     } 
 
-&__links__item{
+&__links__item a{
     color: $onyx;
     padding: 0rem 0.625rem;  
     font-family: $raleway;
