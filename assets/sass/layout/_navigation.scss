@@ -111,6 +111,7 @@
 }
 
 .nav-menu__toggleshow{
+    display:flex;
     @media (max-width: 768px) {
     display:flex;
     }

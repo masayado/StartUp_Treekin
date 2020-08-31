@@ -327,6 +327,9 @@ li:before {
   }
 }
 
+.nav-menu__toggleshow {
+  display: flex;
+}
 @media (max-width: 768px) {
   .nav-menu__toggleshow {
     display: flex;
