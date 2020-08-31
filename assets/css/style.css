@@ -218,37 +218,47 @@ li:before {
   width: 100%;
   height: 5rem;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 0.9375rem 3em;
   background-color: #FFFFFF;
   position: fixed;
 }
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+  }
+}
 
 .nav-menu {
-  margin-left: 0;
   display: flex;
-  align-items: center;
+  margin-left: 0;
+}
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+  }
 }
 .nav-menu__logo {
   float: left;
   cursor: pointer;
   padding-right: 0.625rem;
 }
+@media (max-width: 768px) {
+  .nav-menu__logo {
+    flex-direction: column;
+  }
+}
 .nav-menu__links {
+  display: flex;
   float: right;
   list-style: none;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   letter-spacing: 0.0313rem;
+  align-self: center;
 }
 @media (max-width: 768px) {
   .nav-menu__links {
-    display: none;
-  }
-}
-@media (max-width: 768px) {
-  .nav-menu__links {
+    flex-direction: column;
     display: none;
   }
 }
@@ -262,6 +272,16 @@ li:before {
 }
 .nav-menu__links__item:hover {
   color: #EE9480;
+}
+.nav-menu__buttons {
+  margin-left: auto;
+  align-self: center;
+}
+@media (max-width: 768px) {
+  .nav-menu__buttons {
+    margin-left: 0;
+    display: none;
+  }
 }
 .nav-menu__buttons a {
   color: #333745;
@@ -291,6 +311,26 @@ li:before {
 }
 .nav-menu__buttons button:focus {
   background-color: #C7C8CC;
+}
+
+.nav-menu__toggler {
+  font-size: 30px;
+  display: none;
+  margin-top: 0.3125rem;
+}
+@media (max-width: 768px) {
+  .nav-menu__toggler {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-menu__toggleshow {
+    display: flex;
+  }
 }
 
 .hero {
